@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/caf76dc645.js" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+        }
+
+        .container-login {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-login {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-top: 50px;
+
+        }
+
+        .form-login input {
+            padding: 8px 10px;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        .form-login input[type="submit"] {
+            background-color: aquamarine;
+            border: 0;
+            border-radius: 8px;
+            font-weight: 900;
+        }
+        /* grid */
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 20%)200px ;
+            gap: 20px;
+        }
+        .item{
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <nav>
+                <span>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Dashboard</a>
+                </span>
+                <span>
+                    <a href=""><i class="fa-solid fa-user"></i></a>
+                    <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </span>
+            </nav>
+        </section>
+        <section class="container-login">
+            <form class="form-login">
+                <h1>Please Login</h1>
+                <input type="email" name="" placeholder="write your email" id="" required>
+                <input type="password" name="" id="" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h1>Explore Grid </h1>
+            <div class="container">
+                <div class="item">item-1</div>
+                <div class="item">item-2</div>
+                <div class="item">item-3</div>
+                <div class="item">item-4</div>
+                <div class="item">item-5</div>
+                <div class="item">item-6</div>
+                <div class="item">item-7</div>
+                <div class="item">item-8</div>
+                <div class="item">item-9</div>
+                <div class="item">item-10</div>
+                <div class="item">item-11</div>
+                <div class="item">item-12</div>
+                <div class="item">item-13</div>
+                <div class="item">item-14</div>
+                <div class="item">item-15</div>
+                <div class="item">item-16</div>
+                <div class="item">item-17</div>
+                <div class="item">item-18</div>
+                <div class="item">item-19</div>
+                <div class="item">item-20</div>
+                <div class="item">item-21</div>
+                <div class="item">item-22</div>
+                <div class="item">item-23</div>
+                <div class="item">item-24</div>
+                <div class="item">item-25</div>
+                <div class="item">item-26</div>
+                <div class="item">item-27</div>
+                <div class="item">item-28</div>
+                <div class="item">item-29</div>
+                <div class="item">item-30</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
