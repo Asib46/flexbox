@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .fruit {
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .fruit img {
+            width: 60%;
+        }
+        
+        /* small device */
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                height: 50%;
+            }
+            p{
+                height: 100px;
+                border: 2px dotted blue;
+                overflow: scroll;
+                overflow-x: hidden;
+            }
+            .fruit{
+                background-color: tomato;
+                border: 2px solid green;
+            }
+        }
+
+        /* medium device */
+        @media screen and (min-width:576px) and (max-width:800px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                background-color: aqua;
+            }
+            .fruit{
+                background-color: rgba(0, 255, 34, 0.562);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 100</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, temporibus ullam. Voluptatum esse minus
+                laborum voluptas libero. Illum, rerum minus error ea facere vero maiores, eius soluta iusto et velit.
+            </p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 200</h4>
+            <p>Molestiae modi nesciunt quisquam maiores incidunt, recusandae consequuntur, odit non atque magnam
+                suscipit tempore repellendus ea amet veniam, omnis voluptate reiciendis doloribus similique ducimus
+                repellat natus. Laboriosam quaerat iusto laborum.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 300</h4>
+            <p>Blanditiis sequi aperiam corrupti excepturi voluptatum, repellendus molestias provident earum numquam
+                accusantium modi tempora quia pariatur vel assumenda molestiae recusandae debitis perferendis aliquid
+                ipsa consequatur at esse? Aperiam, quibusdam! Aliquid.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 400</h4>
+            <p>Doloribus non reiciendis et rerum ipsum eligendi aliquid natus labore doloremque, id, neque eos inventore
+                quis magni! Quasi provident sed, reprehenderit, delectus officiis in, expedita voluptatibus illo dicta
+                quia debitis.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 500</h4>
+            <p>Assumenda delectus ut quasi laborum culpa laudantium, pariatur rerum, illum quibusdam nesciunt
+                voluptatibus architecto officiis. Repellat excepturi voluptate tempora, odio libero perspiciatis. Ad
+                aperiam quidem tempora at ea quaerat dolorem?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 600</h4>
+            <p>Sapiente provident quos perspiciatis deserunt porro pariatur autem illum architecto, officiis labore
+                consequatur, fugiat minima tempora, iusto veritatis veniam. Modi quod praesentium obcaecati! Doloremque
+                veritatis deserunt quis nostrum, quidem dicta.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 700</h4>
+            <p>Veniam ipsa aperiam tenetur, facere quam quas modi optio cum nemo natus doloribus sapiente illo
+                accusantium, alias non dicta fugiat incidunt! Iure rerum consequuntur voluptate perferendis repudiandae
+                quos, aperiam suscipit.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 800</h4>
+            <p>Quod, deleniti! Ducimus blanditiis itaque atque consequuntur similique cupiditate quas reiciendis cum?
+                Sint quam delectus labore, ducimus quidem adipisci quod neque nesciunt, facere, atque inventore illum
+                necessitatibus temporibus molestiae ratione!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 900</h4>
+            <p>Eius at magnam qui. Provident maiores excepturi voluptates nobis dignissimos animi tempore laboriosam
+                fugit recusandae vero perspiciatis deserunt non harum labore voluptas explicabo, quidem laborum! Ut modi
+                iste voluptatum quod?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 1000</h4>
+            <p>Sapiente blanditiis sed harum eum mollitia excepturi ad, reiciendis numquam. Necessitatibus aut, sunt eum
+                consequuntur minima error illum, quae molestias qui obcaecati praesentium repellat at quod placeat
+                autem! Eos, aliquam!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 1100</h4>
+            <p>Repellendus quam rem atque voluptate. Et, hic tenetur? Unde, necessitatibus laborum voluptas fugiat eos
+                dolore itaque beatae adipisci architecto dolorum voluptates ipsa cum amet, quam repellendus rem velit et
+                reprehenderit.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="fruit">
+            <img src="images/fruit-basket.jpg" alt="">
+            <h2>Fruit Basket</h2>
+            <h4>Price: 1200</h4>
+            <p>Sint, doloribus ad molestias autem nobis dolorum. Quas quis omnis, aperiam cupiditate tenetur nesciunt
+                dignissimos ea aspernatur nisi officia asperiores pariatur obcaecati, deleniti hic voluptatem dolores
+                voluptates excepturi et ratione!</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+</body>
+
+</html>
