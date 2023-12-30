@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 8vw;
+            /*    <!-- vm = viewport-width -->    */
+        }
+
+        .tiger img {
+            width: 100%;
+        }
+
+        body {
+            /* body max-width and margin auto */
+            max-width: 1000px;
+            margin: auto;
+            border: 2px solid violet;
+        }
+
+        .container-two {
+            display: flex;
+        }
+
+        .container-two .split {
+            width: 50%;
+        }
+
+        .split img {
+            width: 100%;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        .food{
+            border: 2px solid orangered;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .food img{
+            width: 70%;
+        }
+        @media screen and (max-width:576px) {
+            .container-two {
+                flex-direction: column-reverse;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container-two .split {
+                width: 80%;
+            }
+            .container{
+                grid-template-columns: repeat(1,1fr);
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .food{
+                width: 80%;
+            }
+        }
+        @media screen and (min-width:577px) and (max-width:800px) {
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <!-- css relative unit -->
+            <h1>MD Asibur Rahman</h1>
+        </section>
+        <section>
+            <!-- Responsive Image (Fluid Image) -->
+            <div class="tiger">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <!-- Responsive split screen using flex -->
+            <div class="container-two">
+                <div class="split">
+                    <img src="images/fruit-basket.jpg" alt="">
+                </div>
+                <div class="split">
+                    <img src="images/tiger.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container">
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-1</h2>
+                <h4>price-100</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure ad eaque nam, aut sunt sequi quasi
+                    inventore ipsum reiciendis accusantium numquam blanditiis voluptates? Dolorem porro inventore
+                    accusamus quia iure?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-2</h2>
+                <h4>price-200</h4>
+                <p>Nemo laborum quos voluptates. Quaerat vero aut rem ratione amet voluptas ipsa aliquam! Obcaecati
+                    deserunt voluptas aliquid optio eaque impedit. Facilis eum sunt est explicabo beatae corporis eius
+                    officia tempora.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-3</h2>
+                <h4>price-300</h4>
+                <p>Blanditiis, harum sint aspernatur odio quo ad necessitatibus alias repellendus minima officiis sed
+                    tempore ab repudiandae. Sit repellat in, officia, aspernatur non fugiat reprehenderit est error
+                    quos, similique accusantium perferendis!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-4</h2>
+                <h4>price-400</h4>
+                <p>Ab consectetur natus non beatae omnis ducimus commodi! Suscipit id nesciunt distinctio obcaecati
+                    saepe nulla nisi, error ipsum necessitatibus, a eligendi corporis officiis temporibus. Aliquid animi
+                    enim fugiat est dignissimos.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-5</h2>
+                <h4>price-500</h4>
+                <p>Amet ullam culpa voluptatibus rerum quia maiores saepe, sint perferendis laborum, aliquam asperiores
+                    similique autem labore vel, doloremque voluptates in repellat at totam repellendus odio quibusdam!
+                    Voluptatem ut maiores asperiores?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-6</h2>
+                <h4>price-600</h4>
+                <p>Velit nobis ullam cupiditate odit ad, blanditiis molestiae dicta incidunt voluptatem ratione, vero
+                    quaerat fugit nemo tenetur perspiciatis dolores! Eius aliquid facilis veniam reprehenderit dolores
+                    aliquam hic vitae quia. Soluta.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-7</h2>
+                <h4>price-700</h4>
+                <p>Quod nam tenetur sunt? Voluptatem nihil harum, aut nostrum perferendis voluptas explicabo!
+                    Consectetur praesentium atque dicta est cupiditate quasi voluptates saepe quidem suscipit quo ipsa
+                    sunt esse dolores, repellat itaque?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-8</h2>
+                <h4>price-800</h4>
+                <p>Quam dolores nemo distinctio voluptatem in explicabo ipsum deserunt? Enim explicabo facere quaerat
+                    aut vel asperiores laudantium deleniti fuga labore nesciunt impedit dolores sequi totam, culpa
+                    veritatis, aperiam minus nihil.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-9</h2>
+                <h4>price-900</h4>
+                <p>Placeat quasi explicabo, alias saepe eaque rem inventore suscipit praesentium distinctio quibusdam id
+                    accusamus ex, laboriosam tempore eveniet facilis aliquid, nulla repudiandae. Quisquam unde soluta
+                    ipsam eos quas non saepe?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-10</h2>
+                <h4>price-1000</h4>
+                <p>Sed perspiciatis blanditiis laboriosam! Sint repudiandae ipsa nisi eos odio tempora, quis qui culpa
+                    illo doloremque officiis nostrum, ducimus cumque et. Eum aliquid nostrum autem maiores error cum
+                    minus eveniet!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-11</h2>
+                <h4>price-1100</h4>
+                <p>Asperiores earum eius vel aliquam sint perferendis optio dolore dolores autem, ad minus nobis labore
+                    corrupti maiores nulla officiis nesciunt praesentium accusantium voluptatem et, aperiam iure
+                    molestias, ipsa delectus? Impedit.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/fruit-basket.jpg" alt="">
+                <h2>item-12</h2>
+                <h4>price-1200</h4>
+                <p>Fugit illum, quos libero amet, provident ratione praesentium temporibus rem magnam labore harum
+                    numquam cum quam tempora. Accusamus nulla vero ea blanditiis alias doloribus voluptatibus? Odit
+                    nobis omnis ex recusandae!</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
